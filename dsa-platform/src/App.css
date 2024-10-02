@@ -1,0 +1,110 @@
+/* General Container */
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.problem-editor-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Problem Statement */
+.problem-statement {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.code-editor-container {
+  flex: 2;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Feedback container */
+.feedback-container {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e9f7ef;
+  border-left: 5px solid #2ecc71;
+}
+
+/* Editor toolbar */
+.editor-toolbar {
+  display: flex;
+  justify-content: flex-end; /* Align all items (icons) to the right */
+  margin-bottom: 5px;
+  gap: 10px;
+}
+
+/* Language selector dropdown */
+.language-selector {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: auto; /* Push the language dropdown to the left */
+}
+
+/* Buttons for toolbar (Copy, Reset, Download, Fullscreen) */
+.editor-toolbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333;
+}
+
+.editor-toolbar button:hover {
+  color: #007bff;
+}
+
+/* Fullscreen button styles */
+.fullscreen-btn {
+  color: #f39c12;
+}
+
+.fullscreen-btn:hover {
+  color: #e67e22;
+}
+
+/* Feedback button */
+.get-feedback-button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.get-feedback-button:hover {
+  background-color: #2980b9;
+}
+
+/* Loading spinner */
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-top: 20px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
